@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>mirador-annotation-tooltip-plugin 1.0.0 Demo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <style>
+      /* sample
+      .annotaion-tooltip-plugin-annotaions {
+        font-size: 16px !important;
+      }
+      .annotaion-tooltip-plugin-annotaion {
+        border-color: black !important;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div id="mirador"></div>
+    <script type="text/javascript" src="dist/mirador.bundle.js"></script>
+    <script type="text/javascript">
+     var config = {
+       id: 'mirador',
+       windows: [
+         {
+           manifestId: 'https://iiif.harvardartmuseums.org/manifests/object/299843',
+         }
+       ],
+       catalog: [
+         { manifestId: 'https://dzkimgs.l.u-tokyo.ac.jp/videos/cat2020/manifest.json' },
+         { manifestId: 'https://dzkimgs.l.u-tokyo.ac.jp/videos/iiif_in_japan_2017/manifest.json' },
+         { manifestId: 'https://iiif.harvardartmuseums.org/manifests/object/299843' }
+       ],
+       window: {
+         defaultSideBarPanel: 'annotations',
+         sideBarOpenByDefault: true,
+       }
+     };
+     var miradorInstance = Mirador.viewer(config, [ miradorAnnotationTooltipPlugins ]);
+    </script>
+  </body>
+</html>

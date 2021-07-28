@@ -1,0 +1,65 @@
+{
+  "name": "mirador-annotation-tooltip-plugin",
+  "version": "1.0.0",
+  "description": "Mirador 3 plugin to display annotation contents as a tooltip",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "bundle": "npm run build -- --no-demo && npm run bundleOnly",
+    "bundleOnly": "webpack --config bundle/webpack.config.js",
+    "clean": "nwb clean-module && nwb clean-demo && nwb clean-app bundle/dist",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "lodash": "^4.17.21",
+    "mirador": "https://dzkimgs.l.u-tokyo.ac.jp/videos/m3/mirador-annotation-on-video-3.0.0.tgz",
+    "prop-types": "^15.7.2",
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.8.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "mirador": "https://dzkimgs.l.u-tokyo.ac.jp/videos/m3/mirador-annotation-on-video-3.0.0.tgz",
+    "nwb": "0.25.x",
+    "prop-types": "^15.7.2",
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "(Apache-2.0 OR MIT)",
+  "repository": "",
+  "keywords": [
+    "react-component",
+    "mirador",
+    "mirador-3",
+    "mirador-plugin",
+    "iiif"
+  ]
+}

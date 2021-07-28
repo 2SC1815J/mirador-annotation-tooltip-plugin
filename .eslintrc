@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb","react-app"],
+  "globals": {
+    "page": true,
+    "document": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-anonymous-default-export": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "require-jsdoc": "off",
+    "react/prefer-stateless-function": "off",
+    "sort-keys": "off"
+  }
+}
