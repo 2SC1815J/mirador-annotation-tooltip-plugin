@@ -24,7 +24,7 @@ module.exports = {
     new webpack.BannerPlugin(() => {
       const titleMirador = 'Mirador with support for displaying annotations on videos\n\n';
       const licenseMirador = fs.readFileSync('./node_modules/mirador/LICENSE', 'utf8');
-      return `${titleMirador}${licenseMirador}}`;
+      return `${titleMirador}${licenseMirador}`;
     }),
   ],
 };
