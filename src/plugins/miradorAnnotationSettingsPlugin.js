@@ -21,7 +21,7 @@ class MiradorAnnotationSettings extends Component {
           {...targetProps} // eslint-disable-line react/jsx-props-no-spreading
         />
         <MiradorMenuButton
-          aria-label={annotationTooltipEnabled ? 'Hide Annotation Tooltip' : 'Show Annotation Tooltip'}
+          aria-label={annotationTooltipEnabled ? 'Hide annotation tooltip' : 'Show annotation tooltip'}
           onClick={toggleAnnotationTooltipDisplay}
           disabled={annotationTooltipDisabled}
           size="small"
