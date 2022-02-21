@@ -53,7 +53,7 @@ class MiradorAnnotationVideoTooltip extends Component {
         >
           {
             annotations.map((annotation) => {
-              if (hoveredAnnotationIds.includes(annotation.id)) {
+              if (hoveredAnnotationIds && hoveredAnnotationIds.includes(annotation.id)) {
                 // console.log(annotation.content);
                 return (
                   <div
